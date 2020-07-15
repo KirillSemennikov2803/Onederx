@@ -1,0 +1,23 @@
+{
+    "type": "object",
+      "properties": {
+        "alarms": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/Alarm"}
+      }},
+      "required": ["alarms"],
+      "additionalProperties": false,
+    "definitions":{
+      "Alarm":{
+      "type": "object",
+      "properties": {
+        "description": {"type": "string",
+                       "maxLength": 200},
+        "alarmTime":{"type":"integer",
+                     "minimum": 0,
+                      "maximum": 32533921440000}
+      },
+      "required": ["description","alarmTime"],
+      "additionalProperties": false
+    }}
+}

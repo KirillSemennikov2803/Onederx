@@ -1,0 +1,8 @@
+{
+    "type": "object",
+      "properties": {
+        "status": {"const": "ok"}
+      },
+      "required": ["status"],
+      "additionalProperties": false
+}
